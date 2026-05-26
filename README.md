@@ -1,0 +1,2 @@
+# Lamington-Hotel
+Hotel PNG
