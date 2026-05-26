@@ -1,0 +1,489 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    background: #f5f1ea;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo-link {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001;
+}
+
+.logo img {
+    height: 60px;
+    display: block;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    background: url('images/Heropic.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.45);
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 900px;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content p {
+    font-size: 22px;
+    margin: 20px 0;
+    line-height: 1.7;
+}
+
+.hero-content h1 {
+    font-size: 90px;
+    margin-bottom: 20px;
+    line-height: 1.1;
+    color: white;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.subtitle,
+.section-subtitle {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #c89c53;
+    font-size: 14px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.primary-btn {
+    background: white;
+    color: black;
+}
+
+.secondary-btn {
+    border: 1px solid white;
+    color: white;
+}
+
+.primary-btn,
+.secondary-btn {
+    text-decoration: none;
+    padding: 18px 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+
+.nav-links {
+    gap: 40px;
+}
+
+.book-now {
+    background: #111;
+    color: white;
+    padding: 14px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logo img {
+    height: 60px;
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+}
+
+.hero-text {
+    font-size: 22px;
+    line-height: 1.7;
+    margin-top: 20px;
+}
+
+.amenities-section {
+
+    background: #f4f0e8;
+
+    padding: 140px 100px;
+
+    text-align: center;
+}
+
+.amenities-section h2 {
+
+    font-size: 82px;
+
+    font-family: serif;
+
+    margin-top: 20px;
+
+    margin-bottom: 80px;
+
+    color: #111;
+}
+
+.amenities-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+.amenity-card {
+
+    background: #f7f3ec;
+
+    border: 1px solid #ddd3c4;
+
+    padding: 60px 40px;
+
+    text-align: left;
+
+    transition: 0.3s;
+}
+
+.amenity-card:hover {
+
+    transform: translateY(-6px);
+}
+
+.amenity-icon {
+
+    width: 54px;
+    height: 54px;
+
+    border: 1px solid #d7cfc2;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    margin-bottom: 35px;
+
+    font-size: 20px;
+}
+
+.amenity-card h3 {
+
+    font-size: 42px;
+
+    font-family: serif;
+
+    margin-bottom: 25px;
+
+    color: #111;
+}
+
+.amenity-card p {
+
+    color: #6d6861;
+
+    line-height: 1.9;
+
+    font-size: 18px;
+}
+
+/* ROOMS SECTION */
+
+.rooms-section {
+
+    background: #f8f5ef;
+
+    padding: 120px 100px;
+
+    text-align: center;
+}
+
+.rooms-section h2 {
+
+    font-size: 72px;
+
+    font-family: serif;
+
+    color: #111;
+
+    margin-top: 20px;
+
+    margin-bottom: 70px;
+}
+
+.rooms-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px;
+}
+
+.room-card {
+
+    background: white;
+
+    overflow: hidden;
+
+    border: 1px solid #ddd;
+
+    transition: 0.3s ease;
+
+    text-align: left;
+}
+
+.room-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.room-card img {
+
+    width: 100%;
+
+    height: 320px;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+.room-content {
+
+    padding: 35px;
+}
+
+.room-content h3 {
+
+    font-size: 34px;
+
+    font-family: serif;
+
+    margin-bottom: 18px;
+
+    color: #111;
+}
+
+.room-content p {
+
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 30px;
+
+    font-size: 17px;
+}
+
+.room-btn {
+
+    display: inline-block;
+
+    background: #111;
+
+    color: white;
+
+    padding: 14px 28px;
+
+    text-decoration: none;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 13px;
+
+    transition: 0.3s ease;
+}
+
+.room-btn:hover {
+
+    background: #c89c53;
+
+    color: #111;
+}
+
+
+@media(max-width: 900px) {
+
+    .rooms-section {
+
+        padding: 80px 25px;
+    }
+
+    .rooms-section h2 {
+
+        font-size: 48px;
+    }
+
+    .rooms-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .room-card img {
+
+        height: 260px;
+    }
+}
+
+.footer {
+    background: #ece6dc;
+    padding: 40px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 6px solid #420805;
+}
+
+.footer-copy {
+    color: #666;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+
+
+@media(max-width: 900px) {
+
+    .navbar {
+        top: 0;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .sticky-wrapper {
+        height: 600px;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 18px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links {
+
+        display: flex;
+    }
+
+    .book-now {
+
+        margin-top: 10px;
+    }
+
+    .logo img {
+
+        height: 55px;
+    }
+
+    .hero-content h1 {
+
+        font-size: 52px;
+    }
+
+    .hero-buttons {
+
+        flex-direction: column;
+    }
+
+    .amenities-section {
+
+        padding: 90px 30px;
+    }
+
+    .amenities-section h2 {
+
+        font-size: 52px;
+    }
+
+    .amenities-grid {
+
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+
+
+
+
+

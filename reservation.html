@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Lamington Hotel</title>
+    <link rel="icon" href="images/navlogo.png" type="image/png">
+    <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="reservation.css">
+
+</head>
+<body>
+
+<header class="navbar">
+
+    <div class="logo">
+        <a href="index.html" class="logo-link">
+            <img src="images/LamingtonLogo.png" alt="Lamington Hotel Logo">
+            </a> 
+        </div>
+
+    <nav>
+        <ul class="nav-links">
+            <li><a href="restaurant.html">Restaurant</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+        </ul>
+    </nav>
+
+    <a href="reservation.html" class="book-now">Book Now</a>
+
+</header>
+
+
+
+<section class="reservation-section">
+
+    <p class="section-subtitle"><i>PLAN YOUR STAY</i></p>
+
+    <h1>Make a Reservation</h1>
+
+    <p class="reservation-description">
+        Reserve your room directly and receive our best available rate,
+        complimentary breakfast, and early check-in when available.
+    </p>
+    
+
+    <form class="reservation-form">
+
+        <div class="form-group">
+
+    <label>Email Address</label>
+
+    <input 
+        type="email"
+        id="reservationEmail"
+        placeholder="your@email.com"
+        required>
+
+</div>
+
+    <div class="form-group">
+        <label>Check In</label>
+        <input type="date" id="checkIn">
+
+</div>
+
+<div class="form-group">
+        <label>Check Out</label>
+        <input type="date" id="checkOut">
+
+</div>
+
+        <div class="form-group">
+            <label>Guests</label>
+
+            <div class="option-design">
+                <select id="guestCount">
+                    <option>1 Guest</option>
+                    <option>2 Guests</option>
+                    <option>3 Guests</option>
+                    <option>4 Guests</option>
+                <select id="guestCount">
+            </div>
+        </div>
+
+        <button type="submit">Check Availability</button>
+
+    </form>
+
+</section>
+
+<section class="reservation-info-section" id="reservationBanner">
+
+    <p> Need help with your reservation? Send us a message at <a href="mailto: jaredpilapil25@gmail.com">Lamington@gmail.com</a> or Call us at (+63) 9812588405  </p>
+    
+    <button class="agree-btn" onclick="acceptTerms()"> No, Thanks </button>
+
+</section>
+
+<footer class="footer">
+
+        <p class="footer-copy">
+            © 2026 Lamington Hotel. All rights reserved.
+        </p>
+
+        <div class="logo">
+            <img src="images/LamingtonLogo.png" alt="Lamington Hotel Logo">
+        </div>
+
+    </footer>
+
+<script src="script.js"></script>
+
+</body>
+</body>
+</html>
